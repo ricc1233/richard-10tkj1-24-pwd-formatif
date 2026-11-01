@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+
+    <style>
+        /* Universal Selector */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Tag Selector */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Class Selector */
+        .layout {
+            display: flex;
+        }
+
+        /* ID Selector */
+        #sidebar {
+            width: 25%;
+            background-color: #24395e;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Descendant Selector */
+        #sidebar nav {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        /* Descendant Selector */
+        #sidebar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Pseudo-class */
+        #sidebar a:hover {
+            color: yellow;
+        }
+
+        /* Class Selector */
+        .main-content {
+            width: 75%;
+            padding: 30px;
+        }
+
+        /* Descendant Selector */
+        .main-content h1 {
+            color: #24395e;
+        }
+
+        /* Descendant Selector */
+        .main-content p {
+            line-height: 1.8;
+        }
+
+        /* Tag Selector */
+        footer {
+            text-align: center;
+            padding: 14px;
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="layout">
+
+        <aside id="sidebar">
+            <h3>Menu</h3>
+
+            <nav>
+                <a href="../pages/profil.html">Profil</a>
+                <a href="../components/card.html">Proyek</a>
+                <a href="../pages/about.html">Keahlian</a>
+                <a href="../pages/contact.html">Kontak</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h1>Profil Saya</h1>
+
+            <p>
+                Saya Richard, siswa kelas X TKJ.
+                Saya sedang belajar membuat website
+                dengan HTML dan CSS.
+            </p>
+
+            <p>
+                Di halaman ini ada ringkasan tentang
+                saya, proyek yang sudah dibuat,
+                dan kemampuan yang sedang dipelajari.
+            </p>
+
+            <p>
+                Gunakan menu di sebelah kiri untuk
+                berpindah antar bagian portofolio.
+            </p>
+        </main>
+
+    </div>
+
+    <footer>
+        <a href="../index.html">Kembali ke Beranda</a>
+    </footer>
+
+</body>
+</html>
