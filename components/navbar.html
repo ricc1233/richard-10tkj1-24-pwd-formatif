@@ -1,46 +1,111 @@
 
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Navigasi</title>
+    <title>navbar</title>
 
-    <link rel="stylesheet" href="../styles/navbar.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .layout {
+            display: flex;
+            min-height: 470px;
+        }
+
+        #sidebar {
+            width: 25%;
+            background-color: #243b60;
+            color: white;
+            padding: 20px;
+        }
+
+        #sidebar nav {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        #sidebar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #sidebar a:hover {
+            color: #f1c40f;
+        }
+
+        .main-content {
+            width: 75%;
+            padding: 30px;
+            background-color: #f4f6f9;
+        }
+
+        .main-content h1 {
+            color: #243b60;
+        }
+
+        .main-content p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 14px;
+            background-color: #cccccc;
+        }
+    </style>
 </head>
 
 <body>
 
-    <header id="main-header">
-        <nav class="navbar">
+    <div class="layout">
 
-            <div class="logo">Richard.dev</div>
+        <aside id="sidebar">
+            <h3>Menu</h3>
 
-            <ul class="nav-menu">
-                <li><a href="../index.html">Beranda</a></li>
-                <li><a href="../pages/about.html">Tentang</a></li>
-                <li><a href="card.html">Proyek</a></li>
-                <li><a href="../pages/contact.html">Kontak</a></li>
-            </ul>
+            <nav>
+                <a href="../pages/profil.html">Profil</a>
+                <a href="../components/card.html">Proyek</a>
+                <a href="../pages/gallery.html">Keahlian</a>
+                <a href="../pages/contact.html">Kontak</a>
+            </nav>
+        </aside>
 
-        </nav>
-    </header>
+        <main class="main-content">
+            <h1>Profil Saya</h1>
 
-    <main>
-        <h2>Selamat Datang</h2>
+            <p>
+                Saya sedang belajar membuat website
+                menggunakan HTML dan CSS.
+            </p>
 
-        <p>
-            Ini halaman contoh. Bagian ini hanya pengisi
-            agar tampilan terlihat seperti halaman website sungguhan.
-        </p>
+            <p>
+                Di halaman ini terdapat informasi tentang
+                diri saya, proyek yang sudah dibuat,
+                dan kemampuan yang sedang dipelajari.
+            </p>
 
-        <p>
-            <a href="../index.html">Kembali ke Beranda</a>
-        </p>
-    </main>
+            <p>
+                Gunakan menu di sebelah kiri untuk
+                berpindah antar bagian portofolio.
+            </p>
+        </main>
+
+    </div>
 
     <footer>
-        <p>PWD X TKJ - Asesmen Formatif Praktik CSS</p>
+        <a href="../index.html">Kembali ke Beranda</a>
     </footer>
 
 </body>

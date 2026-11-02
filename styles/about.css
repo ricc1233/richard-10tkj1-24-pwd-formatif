@@ -1,6 +1,3 @@
-/* =========================
-   BAGIAN 1: FONT
-========================= */
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -15,11 +12,6 @@ body {
     text-align: center;
     color: #263b5a;
 }
-
-
-/* =========================
-   BAGIAN 2: LATAR
-========================= */
 
 #about {
     background-image: url("../assets/images/gambar.jpg");
@@ -38,10 +30,6 @@ body {
     box-sizing: border-box;
 }
 
-
-/* =========================
-   BAGIAN 3: TEKS
-========================= */
 
 .about-box p {
     font-size: 16px;
