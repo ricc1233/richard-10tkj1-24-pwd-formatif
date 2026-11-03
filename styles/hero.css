@@ -1,0 +1,67 @@
+#hero {
+    height: 400px;
+    background: linear-gradient(135deg, #243b60, #526b82);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    width: 640px;
+    max-width: calc(100% - 40px);
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+    color: white;
+}
+
+.hero-content h1,
+.hero-content p {
+    animation: slide-up 1.2s ease-out 0.3s 1 normal backwards;
+}
+
+.hero-content p {
+    animation-delay: 0.6s;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #e9943e;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(60px);
+        opacity: 0;
+    }
+
+    25% {
+        transform: translateY(40px);
+        opacity: 0.25;
+    }
+
+    50% {
+        transform: translateY(20px);
+        opacity: 0.5;
+    }
+
+    75% {
+        transform: translateY(8px);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 14px;
+}
