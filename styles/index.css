@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+}
+
+header {
+    background-color: #243b60;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#components h2,
+#pages h2 {
+    color: #243b60;
+    font-size: 22px;
+}
+
+main a {
+    color: #e67e22;
+}
+
+main a:hover {
+    color: #b85c12;
+}
+
+footer {
+    background-color: #dce6f2;
+    color: #555555;
+    text-align: center;
+    font-size: 12px;
+    padding: 14px;
+}
